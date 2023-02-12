@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Start to use Heptabase for notes
+tags: [node-taking, tools]
 ---
 
 ## A Roam fan
@@ -16,7 +17,7 @@ but the bi-directional links in Roam can make notes more like a graph (notes <->
 
 This makes sense as the neurons in our brains are also structured like a network, a graph.
 
-So, I couldn't wait to pay to subscribe to Roam Research just to experience and support it.
+So, I couldn't wait to pay to subscribe to Roam Research just to experience and support it :open_hands:.
 
 
 ## Poor in visualization
@@ -49,4 +50,4 @@ I think Heptabase can better match my professional knowledge management needs.
 
 I just paid $83 to use&support it for a year.
 
-My first project on it is GCP learning. Let me see if it's worth or not.
+My first project on it is GCP learning. Let me see if it's worth or not :laughing:!
