@@ -21,7 +21,7 @@
 title: Vivion is mumbling
 email: vivionlin@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Vivion Lin's personal space for thoughts on technology life.
+  Vivion Lin's personal space for thoughts on technology life and for better self education.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vivionlin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: vivionlin
