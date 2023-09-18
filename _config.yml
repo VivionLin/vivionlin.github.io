@@ -52,3 +52,12 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Polyglot settings
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["assets/img"]
+parallel_localization: true
+
+sass:
+  sourcemap: never
