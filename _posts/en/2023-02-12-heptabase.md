@@ -14,7 +14,7 @@ I was surprised by the idea of <mark>bi-directional links</mark> and thought thi
 Most of the popular products (Evernote, Notion, Youdao note, etc.) at that time were tree-like (folder->subfolder/note, 1 to N),
 but the bi-directional links in Roam can make notes more like a graph (notes <-> notes, N to M).
 
-![Roam's di-directional links](/pics/backlink.png)
+![Roam's di-directional links](/assets/img/backlink.png)
 
 This makes sense as the neurons in our brains are also structured like a network, a graph.
 
@@ -35,7 +35,7 @@ Then in 2022, I heard a new product named Heptabase from a Roam fans club.
 
 This product also has some revolutionary ideas, focusing on the <mark>entire input-output flow</mark>:
 
-![Data input to wisdom output flow](/pics/data2wisdom.jpeg)
+![Data input to wisdom output flow](/assets/img/data2wisdom.jpeg)
 
 * Record pieces of information in **journal**
 * When you want to study a specific topic, pull out the info from the journal as a **card**
@@ -43,7 +43,7 @@ This product also has some revolutionary ideas, focusing on the <mark>entire inp
 * Then you can easily write an article by copy-paste this whiteboard
 * What's more, if you want to maintain a big picture of whiteboards, you can design them in a **map**
 
-![Heptabase's whiteboard](/pics/heptabase.jpeg)
+![Heptabase's whiteboard](/assets/img/heptabase.jpeg)
 
 Sounds like it not only keeps the advantages of bi-directional links, but also provides help in building mind maps and outputting articles.
 
