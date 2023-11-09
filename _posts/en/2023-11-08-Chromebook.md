@@ -5,58 +5,68 @@ lang: en
 tags: [PC]
 ---
 
-I just want to write something using my light weight Chromebook elegantly. But it let me down again.  
+I just wanted to write something using my light weight Chromebook. But it made me down again.
+
+<br/>
 
 ## Broken Linux Container
 
 ![Error when launching Linux container](/assets/img/chromebook-container-crashed.png)
 
-It's the second time I got this NEED_UPDATE error this year. 
+This is the second time I got this NEED_UPDATE error this year.
 
-I didn't make backup last time. I thought I could restore the backup and everything will be fine.
+Last time I didn't make backup. I thought if I could restore from a backup then everything will be fine.
 
-But I was wasting 10 minutes to see the restore progress bar stucked in 0%.
+But I was wrong. I wasted 10 minutes in waiting for the restore progress bar which was stucked in 0%.
 
-Alright, let's reboot and try again. Ok, after reboot it told me unable to restore the backup due to SOMETHING WRONG. 
+After reboot, I tried again. Then it told me it was unable to restore the backup due to SOMETHING WRONG.
 
-I removed the whole Linux container and reinstalled it, which was the solution I took for the same issue 9 months ago.
+Same as 9 months ago, I finally decided to remove the whole Linux container and reinstall it.
 
-But the installation was not smoothly. It will fail if the network proxy is not right.
+But the installation was not smoothly. It failed when something wrong happened in the network proxy.
+
+<br/>
 
 ## Unstable Network Connection
 
-As a Chinese, we always need a proxy to reach the global internet.
+As a Chinese, I always need a proxy to reach the global internet.
 
 But I cannot just use the same solution copied from Android to Chrombook.
 
-I tried using 3 different network provided by different companies, only 1 can provide stable network. 
+I tried using 3 different network providers, only 1 is stable. 
 
-You also need to check the system time. One time I couldn't visit internet just because the system time cannot be sycnhronized successfully.
+What's more, you need to check the synchronization of system time because sycnhronization failure will cause network error.
 
-It's really very difficult to visit internet using Chromebook in China.
+It's really not easy to visit internet using Chromebook in China.
 
 ![Network was limited](/assets/img/wifi-connection-was-limited.png)
 
+<br/>
+
 ## Special User Habits
 
-It's ok for frontend developer to use Chromebook for development using the Linux container feature since we can find the installation package of VSCode for Debian.
+If you are a frontend developer, then using Chrombook for development is tolerable.
 
-But if you need to operate the database, you may need to use command line directly because there are very few visualized tools for database in the Google Play and the Chrome web store. 
+The Linux container feature fits NPM. And we can find the installation package of VSCode for Debian.
 
-What's more, the keymaps in Chromebook are not the same as in most of other laptops. You'd better get used to it.
+But if you need to communicate with database, you may need to use command line directly because there're very few graphical tools for database maangemetn in Google Play and Chrome web store.
+
+The keymaps in Chromebook are not the same as in most of other laptops. You'd better get used to it.
+
+<br/>
 
 ## Rare Accessories
 
-Google is my dream company. I love the "G" in the cover.
+Google is my dream company. I really love the "G" in the cover.
 
-I really wanted to take care of my Chromebook when I bought it. But I was not able to buy a suitable laptop case and screen protector and keyboard membrane in Chinese e-shop platforms Taobao and JD.
+But I was not able to buy a suitable laptop case, screen protector and keyboard membrane in Chinese e-shop platforms like Taobao and JD for it.
 
----
+Even though I know Google doesn't provide service in China and possibly has no plan in the future, I'm a still a big fan of Android, Pixel, Chrome and ChromeOS.
 
-I'm a big Google fan but it's a pity that Google doesn't provide service to China.
+But to be honest, it's really not a good idea to use it in this region.
 
-I was as interested in ChromeOS as I'm interested in Android. But it's not a good idea to use it in my region.
-
-At the time I finished this blog using Github web, I haven't finished reinstalling the Linux container. Who knows when will I get the same issue again ?
+<br/>
 
 ![Linux Installation Got Stucked](/assets/img/linux-installation-stuck.png)
+
+By the time I finished this blog using Github web, the progress bar for Linux container installation is still running. Who knows when will I get the same issue again ?
