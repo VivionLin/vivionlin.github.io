@@ -19,7 +19,8 @@ tags: [Finance]
  * 设定每个工作日 50，每个节假日 100 的预算，预算当作 Saving
  * 记录每一笔零用消费，支出即为 Withdraw
  * SavingsGoal 有安卓桌面 Widget 的支持，可以直观地看到我们的目标进度条
-![SavingsGoal's Android widget](/assets/img/SavingsGoal-widget.png)
+
+<img src="/assets/img/SavingsGoal-widget.png" alt="SavingsGoal's Android widget" width="300" />
 
 如果我一天不花钱，便录入今天 50 的 saving。看着绿色的进度条，我真的很有干劲继续坚持省钱。
 
@@ -43,11 +44,11 @@ tags: [Finance]
 
 于是尝试了把自己想要坚持的健康习惯录了进去，发现可以设定完成对应获得的积分。
 
-![Some of my habits in FunHabit](/assets/img/FunHabit-habits.png)
+<img src="/assets/img/FunHabit-habits.png" alt="Some of my habits in FunHabit" width="300" />
 
 积分可以兑换 Wish store 里的 wish，于是就把自己想拥有的物品、想去的旅行录了进去。
 
-![Some of my wishes in FunHabit](/assets/img/FunHabit-WishStore.png)
+<img src="/assets/img/FunHabit-WishStore.png" alt="Some of my wishes in FunHabit" width="300" />
 
 用了一个星期后发现动力强大，于是发展成将对自己职业发展、人际关系有益的小事也添加了进去。
 
