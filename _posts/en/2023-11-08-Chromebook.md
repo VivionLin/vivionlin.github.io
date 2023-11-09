@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Not a good idea to use Chromebook in China
+title: Really not a good idea to use Chromebook in PRC
 lang: en
 tags: [PC]
 ---
