@@ -11,6 +11,7 @@ tags: [Finance]
 
 ---
 
+
 ## 零用预算控制
 
 在 [记账](https://vivionlin.github.io/2023/11/09/My-Money-Management-Method.html) 的过程中，我发现自己每个月 2k 左右的零花钱预算经常不够用，零花钱账户经常要向固定储蓄账户借。
@@ -20,11 +21,12 @@ tags: [Finance]
  * 设定每个工作日 50，每个节假日 100 的预算，预算当作 Saving
  * 记录每一笔零用消费，支出即为 Withdraw
  * SavingsGoal 有安卓桌面 Widget 的支持，可以直观地看到我们的目标进度条
-!(SavingsGoal's Android widget)[/assets/img/SavingsGoal-widget.png]
+![SavingsGoal's Android widget](/assets/img/SavingsGoal-widget.png)
 
 如果我一天不花钱，便录入今天 50 的 saving。看着绿色的进度条，我真的很有干劲继续坚持省钱。
 
 ---
+
 
 ## 工作日带饭
 
@@ -40,17 +42,18 @@ tags: [Finance]
 
 ---
 
+
 ## 用消费欲望鼓励好习惯养成
 
 偶然在 Playstore 闲逛发现了 Fun Habit 这款简洁小应用。被它可爱的 UI 吸引。
 
 于是尝试了把自己想要坚持的健康习惯录了进去，发现可以设定完成对应获得的积分。
 
-!(Some of my habits in FunHabit)[/assets/img/FunHabit-habits.png]
+![Some of my habits in FunHabit](/assets/img/FunHabit-habits.png)
 
 积分可以兑换 Wish store 里的 wish，于是就把自己想拥有的物品、想去的旅行录了进去。
 
-!(Some of my wishes in FunHabit)[/assets/img/FunHabit-WishStore.png]
+![Some of my wishes in FunHabit](/assets/img/FunHabit-WishStore.png)
 
 用了一个星期后发现动力强大，于是发展成将对自己职业发展、人际关系有益的小事也添加了进去。
 
