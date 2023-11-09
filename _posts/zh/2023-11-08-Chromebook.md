@@ -7,6 +7,8 @@ tags: [PC]
 
 想打开我机身轻薄、外观设计充满前卫大厂感、装载着小众 OS 的 Chromebook 轻轻松松写写博客。但它又双桑叕一次让我失望了。
 
+---
+
 ## 三番两次的 Linux 环境启动错误
 
 ![Linux 环境无法启动](/assets/img/chromebook-container-crashed.png)
@@ -21,6 +23,8 @@ tags: [PC]
 
 然而重装也是一个等待漫长的过程……网络要是没接出去，就会中途失败。
 
+---
+
 ## 网络连接不稳定
 
 而网络能不能接出去，不是把在 Android 里平时能成功的配置，直接搬过来就没有问题。
@@ -33,6 +37,8 @@ tags: [PC]
 
 ![网络连接莫名被限制](/assets/img/wifi-connection-was-limited.png)
 
+---
+
 ## 不主流的用户习惯
 
 如果你不满足于买它来只是做上网本，想利用它自带的 Linux 环境做开发机。
@@ -42,6 +48,8 @@ tags: [PC]
 后台的话数据库操作要么你命令行，否则就得在 Google Play / Chrome app 里找图形化工具。
 
 另外 Chromebook 的功能键跟常用键盘不一样，触模版的方向跟平时的 Lenovo 等是相反的，快捷键跟 Windows 也有些不一样，这些你得熟悉。
+
+---
 
 ## 稀缺的区域性周边/售后支持
 
@@ -54,6 +62,7 @@ tags: [PC]
 ![Linux 环境难以安装](/assets/img/linux-installation-stuck.png)
 
 ---
+
 
 众所周知，G 家不在中国提供服务，我买之前就是做好了像折腾 Android 一样折腾它的心理准备。但它真的麻烦多了。
 
