@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson learned from Whitney Houston
+title: Whitney Houston
 lang: en
 tags: [life]
 ---
@@ -35,5 +35,4 @@ But even though we thought her marriage was painful, she still found happiness i
 I feel more satisfied with my life now. I do have a lot. My life is not perfect, but I still can find happiness in every aspect of my life. 
 No matter whether we are rich or poor, talented or normal, having healthy habits or not, we all have our troubles, and our treasures.
 
-Thanks to Witney, I wish you find your god and the unconditional love and the strength in heaven to enter the next stage of your experiences.
-We will always love you.
+Thanks to Whitney, I wish you find your god and the unconditional love and the strength in heaven to enter the next stage of your experiences.
