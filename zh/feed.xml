@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://vivionlin.github.io/zh/feed.xml" rel="self" type="application/atom+xml" /><link href="http://vivionlin.github.io/zh/" rel="alternate" type="text/html" /><updated>2024-05-27T08:35:03-05:00</updated><id>http://vivionlin.github.io/feed.xml</id><title type="html">Vivion is mumbling</title><subtitle>Vivion Lin&apos;s personal space for thoughts on technology life and for better self education.</subtitle><entry xml:lang="zh"><title type="html">国行一加 11 刷氧 OS</title><link href="http://vivionlin.github.io/zh/2024/05/27/One-Plus-11-Flash-Oxygen-OS.html" rel="alternate" type="text/html" title="国行一加 11 刷氧 OS" /><published>2024-05-27T00:00:00-05:00</published><updated>2024-05-27T00:00:00-05:00</updated><id>http://vivionlin.github.io/2024/05/27/One-Plus-11-Flash-Oxygen-OS</id><content type="html" xml:base="http://vivionlin.github.io/2024/05/27/One-Plus-11-Flash-Oxygen-OS.html">&lt;p&gt;手里的一加 5 用了 6 年突然烧坏了主板。&lt;/p&gt;
+
+&lt;p&gt;一年前才刚刷了 Pixel Experience，买多了一份充电套装，希望能多用几年。
+没想到一觉醒来，握住的是一块没有反应的黑砖。&lt;/p&gt;
+
+&lt;p&gt;我只好把换手机的计划提前。&lt;/p&gt;
+
+&lt;p&gt;因为执着于原生系统体验，所以直接跳过了小米、OPPO 等一众优秀厂商。
+而 Google Pixel 显然不是个性价比的选择，所以我的选择再次落到了一加上。&lt;/p&gt;
+
+&lt;p&gt;据称，自一加 12 起，国内外系统互刷被进一步阻断，让一加 12 刷氧 OS 暂时变得无解。&lt;/p&gt;
+
+&lt;p&gt;看起来一加 12 成熟的刷机方案还遥遥无期，为解燃眉之急，我最终下单了一加 11。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;操作步骤记录&quot;&gt;操作步骤记录&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;备份、拆下 SIM 卡&lt;/li&gt;
+  &lt;li&gt;解 BL 锁
+    &lt;ul&gt;
+      &lt;li&gt;打开开发者模式
+        &lt;ul&gt;
+          &lt;li&gt;设置 - 关于本机 - 版本信息 - 点5次版本号&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;开启 OEM-unlock&lt;/li&gt;
+      &lt;li&gt;打开 USB 调试
+        &lt;ul&gt;
+          &lt;li&gt;设置 - 其他设置 - 开发者选项 - 打开 USB 调试&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;用 ADB 工具跑命令解锁
+        &lt;ul&gt;
+          &lt;li&gt;不关机，用原装数据线连电脑&lt;/li&gt;
+          &lt;li&gt;下载 &lt;a href=&quot;https://developer.android.com/tools/releases/platform-tools&quot;&gt;ADB 工具&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adb reboot-bootloader&lt;/code&gt; 进入 fastboot 模式&lt;/li&gt;
+          &lt;li&gt;执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastboot flashing unlock&lt;/code&gt; 进入解 BL 锁界面
+            &lt;ul&gt;
+              &lt;li&gt;若 fastboot 提示找不到设备可&lt;a href=&quot;https://blog.csdn.net/weixin_45675704/article/details/105483845&quot;&gt;手动设置驱动&lt;/a&gt;解决&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;用音量键下选 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UNLOCK THE BOOTLOADER&lt;/code&gt; 并按下锁屏键确认解锁&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;刷系统
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://yun.daxiaamu.com/OnePlus_Roms/%E4%B8%80%E5%8A%A011/&quot;&gt;下载 ROM&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;拿当前系统版本号来比较找 ROM 包，版本不要回滚（据称一加 11 存在不明确未公开的“防回滚”机制，禁止用户降级到较低的版本），需要是安卓 13（我用的 CPH2449_13.1.0.580(EX01)）&lt;/li&gt;
+          &lt;li&gt;用解压软件把下载下来的 ROM 解压出来，以提取里面的 payload.bin 文件&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://pan.baidu.com/share/init?surl=skHH5YBnktefB79I91YdTA&amp;amp;pwd=v8cn&quot;&gt;下载 ocdt 分区文件&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;用解压软件把里面的 oos_ocdt.img 提取出来&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;下载&lt;a href=&quot;https://github.com/libxzr/FastbootEnhance/releases&quot;&gt;刷机辅助工具&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;进入 fastbootd 模式
+        &lt;ul&gt;
+          &lt;li&gt;ADB 命令行执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adb reboot-bootloader&lt;/code&gt; 进入 bootloader&lt;/li&gt;
+          &lt;li&gt;打开 Fastboot Enhance，可以看到自己的设备&lt;/li&gt;
+          &lt;li&gt;双击连接后的设备，单击“Reboot to fastbootd”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;删除动态分区
+        &lt;ul&gt;
+          &lt;li&gt;点开 partition 选项卡，根据分区名过滤”cow”，据称要将过滤出来的分区一一删除，如无则忽略，我的没有&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;执行刷写 payload.bin
+        &lt;ul&gt;
+          &lt;li&gt;确认勾选 “Ignore Unknown Partition”&lt;/li&gt;
+          &lt;li&gt;确认 fastbootd is YES&lt;/li&gt;
+          &lt;li&gt;单击“Flash payload.bin”，等待进度条完成&lt;/li&gt;
+          &lt;li&gt;弹出操作完成后的对话框后，点 “Reboot to bootloader”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;执行刷写 ocdt 分区
+        &lt;ul&gt;
+          &lt;li&gt;ADB 工具执行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastboot flash ocdt ${你的 oos_ocdt.img 的路径}&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;回到 Fastboot Enhance 转回 fastbootd 执行格式化数据&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;回锁 BL
+    &lt;ul&gt;
+      &lt;li&gt;不插卡，开机跳过所有选项，不设置 PIN 码&lt;/li&gt;
+      &lt;li&gt;打开开发者模式&lt;/li&gt;
+      &lt;li&gt;开启 OEM-unlock&lt;/li&gt;
+      &lt;li&gt;打开 USB 调试&lt;/li&gt;
+      &lt;li&gt;用 ADB 工具跑命令加锁
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adb reboot-bootloader&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastboot flashing lock&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fastboot reboot&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;等待开机完成，进设置把系统一版一版地更新到最新版本&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;使用了一个多月，没有发现什么问题。&lt;/p&gt;
+
+&lt;p&gt;原本在参数页看到海外版的一加 11 支持 ESIM 不支持双卡，担心国行版刷了氧之后双卡也不可用了。
+但实测刷了也还保有双卡功能，设置里有选项提示，如果开启 ESIM 那么第二个卡槽就不能做实体卡用。&lt;/p&gt;
+
+&lt;p&gt;希望它陪我走过一个 6 年。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;以上参考自：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/read/cv29346543/&quot;&gt;一加11刷氧os办法补充&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.daxiaamu.com/7694/&quot;&gt;一加11刷机玩机的若干个坑及其处理办法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="tools" /><summary type="html">手里的一加 5 用了 6 年突然烧坏了主板。</summary></entry><entry xml:lang="zh"><title type="html">用 200 元的 TV 棒收看全球流媒体</title><link href="http://vivionlin.github.io/zh/2024/03/29/Chromecast.html" rel="alternate" type="text/html" title="用 200 元的 TV 棒收看全球流媒体" /><published>2024-03-29T00:00:00-05:00</published><updated>2024-03-29T00:00:00-05:00</updated><id>http://vivionlin.github.io/2024/03/29/Chromecast</id><content type="html" xml:base="http://vivionlin.github.io/2024/03/29/Chromecast.html">&lt;p&gt;&lt;strong&gt;个人需求&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;收看跨地区的体育直播 / 实时节目 / 影视作品&lt;/li&gt;
+  &lt;li&gt;需要海量资源作“沉浸式”外语听力训练&lt;/li&gt;
+  &lt;li&gt;在不刷机的前提下，替换投影仪点播的内容&lt;/li&gt;
+  &lt;li&gt;差旅或回家，替换电视看到的内容&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;方案&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;TV 棒 + 流媒体订阅&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在海鲜市场淘了 240 包邮的 Google Chromecast HD。&lt;/p&gt;
+
+&lt;p&gt;选它没选 Apple TV 或 Amazon Fire TV 完全是因为手机是原生 Android。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.maketecheasier.com/assets/uploads/2021/03/how-to-reset-chromecast-chromecast-google-tv.jpg&quot; alt=&quot;Chromecast HD&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;像用了一半的肥皂一样小，非常适合携带。&lt;/p&gt;
+
+&lt;p&gt;带一个 HDMI 口接显示，Type C 接 5V1A 电流。能看 4K 视频的是单独的 4K 版本。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;操作系统是 Google TV。Based on Android 所以能看到熟悉的 Android 机配置项。&lt;/p&gt;
+
+&lt;p&gt;但针对 TV 的场景做了定制和舍弃，开屏首页就是内容推荐。通过 App Store 装 app 但只能搜到的特定的 app 种类。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.mos.cms.futurecdn.net/XE45okrybPWAy32eeSXCee.jpg&quot; alt=&quot;Google TV&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;对于网络环境，有线电缆需要接在特定的电源适配器上。&lt;/p&gt;
+
+&lt;p&gt;如果网络环境不受官方业务支持，则需要有 VPN 才能使用。&lt;/p&gt;
+
+&lt;p&gt;其中，机器激活对 wifi 连接的要求要比激活后严格。&lt;/p&gt;
+
+&lt;p&gt;因为激活时能选择的 wifi 连接，不能设置高级选项，这就使得需要设置代理的连接代理效果无效。&lt;/p&gt;
+
+&lt;p&gt;可参考 &lt;a href=&quot;https://bulianglin.com/archives/sharenetwork.html&quot;&gt;不良林&lt;/a&gt; 的思路和操作：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;软路由&lt;/li&gt;
+  &lt;li&gt;部分在 Network &amp;amp; internet &amp;gt; Hotspot &amp;amp; tethering 下有 &lt;strong&gt;Allow clients to use VPNs&lt;/strong&gt; 的 Android 机（如亲儿子 Pixel）可以直接通过分享热点共享手机接上的 VPN 网络&lt;/li&gt;
+  &lt;li&gt;root 的 Android 手机可通过 VPNHotspot 共享网络&lt;/li&gt;
+  &lt;li&gt;某些 VPN 软件可以在 windows 创建 TUN/TAP 虚拟网卡，配合 windows 10/11 的 mobile hotspot 功能（会自动创建一张新的虚拟网卡）、或机子本身有的多余网卡，进行网络连接共享&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;激活成功后，如果需要单独为 Chromecast 安装 VPN（方便携带），但对应 VPN app 在 App Store 搜不到，油管有大量教程教授如何用同一局域网下的电脑通过 ADB 推送安装。&lt;/p&gt;
+
+&lt;p&gt;中国区可能会显示网络连接受限，需要修改时间更新服务器的地址。&lt;/p&gt;
+
+&lt;p&gt;一旦搞定了网络环境，至少就能用它看油管视频了，也可以选择订阅更多的流媒体资源。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;流媒体服务方面，优秀原创剧集比较多的 Netflix，$6.99 起/月，合租可以做到 ¥15/月。&lt;/p&gt;
+
+&lt;p&gt;资源收录最丰富的 Amazon Prime Video，印度地区费用最便宜，合租差不多 ¥15/月。&lt;/p&gt;
+
+&lt;p&gt;要动画 / 体育直播的，Hulu + Disney + ESPN 合租可以做到 ¥40/月。&lt;/p&gt;
+
+&lt;p&gt;不差钱可直接上 Youtube TV，base plan $72.99/月，ABC、CBS、FOX、NBC、National Geography、Max、NBA、Disney、HBO 等全都能解锁。&lt;/p&gt;
+
+&lt;p&gt;跟 Youtube TV 类似的 Sling TV 定价要便宜 10 刀，但是有地域判断。&lt;/p&gt;
+
+&lt;p&gt;也就是用 Chromecast 收看流媒体也是不能避开平台的地域 / IP 检测行为的，甚至 Netflix 对 TV 端的判断更加严格，需要切 IP 区域还是要注意 VPN 的解锁能力。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;至此，便可带着它四处顶替无聊的 xx 智能电视 / xx 投影仪 / 老家的旧电脑上的影视内容，刷视频练听力啦。&lt;/p&gt;</content><author><name></name></author><category term="tools" /><summary type="html">个人需求</summary></entry><entry xml:lang="zh"><title type="html">惠特妮・休斯顿</title><link href="http://vivionlin.github.io/zh/2024/01/09/Whitney-Houston.html" rel="alternate" type="text/html" title="惠特妮・休斯顿" /><published>2024-01-09T00:00:00-06:00</published><updated>2024-01-09T00:00:00-06:00</updated><id>http://vivionlin.github.io/2024/01/09/Whitney-Houston</id><content type="html" xml:base="http://vivionlin.github.io/2024/01/09/Whitney-Houston.html">&lt;p&gt;几天前，我在一份推荐歌单中偶然发现了一首老歌，名为《All At Once》。歌词内容和编曲透着浓厚的年代感，但演唱却深深吸引了我。&lt;/p&gt;
+
+&lt;p&gt;我好奇地搜了这首歌的歌手 ，“惠特妮・休斯顿”，熟悉的名字，勾起了我初中的暑假的回忆。因为成绩还行，初二我得到了人生中第一件电子设备——一部 400 块的杂牌 MP3。里面自带了几首歌，其中的一首英文歌就是惠姨的经典名作《I Will Always Love You》。我第一次听完，就被她强劲、扑面而来一口气延续十几秒的高音和自如流畅干净利落的演唱技巧所震服。中二如我也只好承认自己只是个凡夫俗子，人家是专业的。&lt;/p&gt;
+
+&lt;p&gt;后来我再次听到她的名字，是在她的去世新闻中。那年我上高中了，有了自己的手机。我觉得很可惜，这意味着我没有机会现场听到她的演出了。
+但后来我便意识到即使她还在世，我也无法再次听到她像 CD 中那样震撼我的演出。
+由于长年的毒瘾，她的身体已经受到了不可逆转的伤害，再不复当年之盛。
+只是许多人也曾经期盼过她能再现辉煌，像电影里的主角一样，战胜心魔，重新开始。&lt;/p&gt;
+
+&lt;p&gt;斯人已逝，但经典永流传。
+时隔多年，惠姨的作品再次击中了我，让我深感唏嘘。&lt;/p&gt;
+
+&lt;p&gt;我曾寻找过不同歌手对永爱的翻唱版本，国内外众多知名歌手，如 Jessie J、Hudson、阿妹、李玟都曾翻唱过这首歌，但都无法比拟惠姨的余音绕梁。&lt;/p&gt;
+
+&lt;p&gt;这种唏嘘的感觉，激起了我对她私生活的好奇。我观看了奥普拉对她的访谈、前经纪人的回忆录、她前夫找灵媒的对话……
+随着我了解的越来越多，我不禁自问，为何我对她的经历如此着迷。
+我意识到，吸引我的是那些我不能理解、或者说情绪上不能接受的事实：为什么她拥有了这么多我想有的，却仍然没过好一生。&lt;/p&gt;
+
+&lt;p&gt;历史级的成就、举世闻名、身前身后都财富连连。
+然而，名气是一把双刃剑。
+她的知名度越高，大众和媒体对她私生活的好奇也就越浓。
+我不确定她是否借助毒品来逃避那密集的演出日程、巨大的公众关注压力、以及不如意的亲密关系。
+显然，财富和名气并未给她带来幸福。她仍然有很多的问题要处理。&lt;/p&gt;
+
+&lt;p&gt;这一年来，我也常感到焦虑，渴望一夜暴富。我常梦想着和所爱的人生活在舒适的地方，不必担心因为做自己而失去工作，拥有充足的时间来维护健康习惯和培养爱好……
+我将焦点放在了我所缺乏的东西上，希望能快速实现愿望，尽早享受成果。
+我以为如果我能暴富，问题将迎刃而解。&lt;/p&gt;
+
+&lt;p&gt;然而，事实上我已经拥有了许多宝贵的东西。即使我不去做，我也足够好了。即便我做到了，如果我仍盲目追求，新的烦恼依旧会如影随行。&lt;/p&gt;
+
+&lt;p&gt;惠姨曾表示她并不后悔自己所做的，尽管在外人看来千疮百孔，她仍然觉得当中存在不少幸福时刻。
+在人生的最后几年，她也在亲友帮助下戒毒成功，怀着对上帝所赐力量的虔诚，重新开始演出活动。
+虽然技巧娴熟如她，也无法弥补身体机能的重大退步。&lt;/p&gt;
+
+&lt;p&gt;她说不害怕失去她的声音，她害怕失去灵魂。
+我相信，她没有带着太多遗憾离开，她的一生虽然有如过山车般跌宕起伏，迷失过，但她还是找回了自己。&lt;/p&gt;
+
+&lt;p&gt;每个人都有自己的挑战，也有自己独特的宝藏。
+我会带着对生活不断增进的理解，感激隐藏于日常点滴中的幸福和满足。&lt;/p&gt;</content><author><name></name></author><category term="Life" /><summary type="html">几天前，我在一份推荐歌单中偶然发现了一首老歌，名为《All At Once》。歌词内容和编曲透着浓厚的年代感，但演唱却深深吸引了我。</summary></entry><entry xml:lang="zh"><title type="html">最近发现的 3 条节流妙招</title><link href="http://vivionlin.github.io/zh/2023/11/09/New-Way-For-Budget.html" rel="alternate" type="text/html" title="最近发现的 3 条节流妙招" /><published>2023-11-09T00:00:00-06:00</published><updated>2023-11-09T00:00:00-06:00</updated><id>http://vivionlin.github.io/2023/11/09/New-Way-For-Budget</id><content type="html" xml:base="http://vivionlin.github.io/2023/11/09/New-Way-For-Budget.html">&lt;p&gt;大环境肉眼可见地不太好，前几年也消费主义疯狂过了，也许也有年纪渐长脑袋发育激素分泌趋向理智的原因，我开始倾向节流了。&lt;/p&gt;
+
+&lt;p&gt;最近用了两个 app，并调整了生活方式。发现不仅能控制消费，还鼓励了自己做更多长期有益的小事情。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;零用预算控制&quot;&gt;零用预算控制&lt;/h3&gt;
+
+&lt;p&gt;在 &lt;a href=&quot;https://vivionlin.github.io/2023/11/09/My-Money-Management-Method.html&quot;&gt;记账&lt;/a&gt; 的过程中，我发现自己每个月 2k 左右的零花钱预算经常不够用，零花钱账户经常要向固定储蓄账户借。&lt;/p&gt;
+
+&lt;p&gt;我想是日常零用开销控制的粒度不够，于是找了一款类似存钱罐的 app SavingsGoal：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;创建一个目标，以一个月为周期，取一个正数作为目标金额&lt;/li&gt;
+  &lt;li&gt;设定每个工作日 50，每个节假日 100 的预算，预算当作 Saving&lt;/li&gt;
+  &lt;li&gt;记录每一笔零用消费，支出即为 Withdraw&lt;/li&gt;
+  &lt;li&gt;SavingsGoal 有安卓桌面 Widget 的支持，可以直观地看到我们的目标进度条&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/SavingsGoal-widget.png&quot; alt=&quot;SavingsGoal&apos;s Android widget&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果我一天不花钱，便录入今天 50 的 saving。看着绿色的进度条，我真的很有干劲继续坚持省钱。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;工作日带饭&quot;&gt;工作日带饭&lt;/h3&gt;
+
+&lt;p&gt;除了通过记账调整消费思维，我还下决心做到工作日带饭。&lt;/p&gt;
+
+&lt;p&gt;假如每餐外卖 20，那么工作日餐饮消费一个月下来也能上千。&lt;/p&gt;
+
+&lt;p&gt;咱家两个人，如果在一周前提前备餐缩短做饭时长，能节省 50%+，拿省出来的部分周末去娱乐不也挺香嘛。&lt;/p&gt;
+
+&lt;p&gt;而且烹饪过程的卫生可以被控制，还能顺势尝试更多菜式。&lt;/p&gt;
+
+&lt;p&gt;我已经体验了 3 周，这个过程需要单独一篇文章来展开。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;用消费欲望鼓励好习惯养成&quot;&gt;用消费欲望鼓励好习惯养成&lt;/h3&gt;
+
+&lt;p&gt;偶然在 Playstore 闲逛发现了 Fun Habit 这款简洁小应用。被它可爱的 UI 吸引。&lt;/p&gt;
+
+&lt;p&gt;于是尝试了把自己想要坚持的健康习惯录了进去，发现可以设定完成对应获得的积分。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/FunHabit-habits.png&quot; alt=&quot;Some of my habits in FunHabit&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;积分可以兑换 Wish store 里的 wish，于是就把自己想拥有的物品、想去的旅行录了进去。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/FunHabit-WishStore.png&quot; alt=&quot;Some of my wishes in FunHabit&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用了一个星期后发现动力强大，于是发展成将对自己职业发展、人际关系有益的小事也添加了进去。&lt;/p&gt;
+
+&lt;p&gt;这当中有个积分估算的标准需要自行把握，因为会影响到愿望兑换的难易程度。最好把握在努力一把可以接触到，但是需要短期的坚持的程度。&lt;/p&gt;
+
+&lt;p&gt;另外，不能放松标准。比如不能因为愿望要过期了，就把目标积分调低，也不该提前买下愿望后期再补积分，这样会失去动力。&lt;/p&gt;
+
+&lt;p&gt;有没有成效呢？我这 24 小时内连发了 4 篇文章，不就是为了拿到抢 Amei 演唱会门票的购买资格，连补 60 分吗…&lt;/p&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">大环境肉眼可见地不太好，前几年也消费主义疯狂过了，也许也有年纪渐长脑袋发育激素分泌趋向理智的原因，我开始倾向节流了。</summary></entry><entry xml:lang="zh"><title type="html">个人记账方法</title><link href="http://vivionlin.github.io/zh/2023/11/09/My-Money-Management-Method.html" rel="alternate" type="text/html" title="个人记账方法" /><published>2023-11-09T00:00:00-06:00</published><updated>2023-11-09T00:00:00-06:00</updated><id>http://vivionlin.github.io/2023/11/09/My-Money-Management-Method</id><content type="html" xml:base="http://vivionlin.github.io/2023/11/09/My-Money-Management-Method.html">&lt;p&gt;分享一下我个人用了三年的记账方法，主要思想借鉴于一篇知乎的答案，抱歉原答案我已经找不出来了。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;核心思想&quot;&gt;核心思想&lt;/h2&gt;
+
+&lt;p&gt;大体思路是把钱分成以下 5 个部分，每个部分有专门的账户：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;收入
+    &lt;ul&gt;
+      &lt;li&gt;储蓄账户 A，通常是工资卡&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;固定储蓄
+    &lt;ul&gt;
+      &lt;li&gt;储蓄账户 B&lt;/li&gt;
+      &lt;li&gt;每月定存一点到这个账户&lt;/li&gt;
+      &lt;li&gt;投资会从这个账户划出&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;固定支出
+    &lt;ul&gt;
+      &lt;li&gt;储蓄账户 C&lt;/li&gt;
+      &lt;li&gt;房租、话费、公交费、保险、付费 app 月租…等等非灵活变动的支出&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;愿望基金
+    &lt;ul&gt;
+      &lt;li&gt;储蓄账户 D，可以选择跟账户 C 共用，因为在你确定这个愿望的时候就相当于一笔固定支出了&lt;/li&gt;
+      &lt;li&gt;如想去 xxx 旅游预算…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;零花钱
+    &lt;ul&gt;
+      &lt;li&gt;储蓄账户 E + 余额宝 + 微信余额&lt;/li&gt;
+      &lt;li&gt;餐饮、娱乐消费等灵活变动的支出&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我是上班族，每个月拿到固定收入后（入账户 A），
+就转账定存部分到账户 B、固定支出到账户 C，再根据情况划完账户 D，剩下的部分就给零花钱账户。&lt;/p&gt;
+
+&lt;p&gt;除零花钱外，定存、固定支出、愿望基金都是可以固定预算的。所以对零花钱来说，多可多花，少可少花。&lt;/p&gt;
+
+&lt;p&gt;因为 5 个大类有对应的账户，收支明细就被自然归类了。比如想知道固定支出的情况直接查账户 C 的明细就是了。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;其它情况&quot;&gt;其它情况&lt;/h2&gt;
+
+&lt;p&gt;支出可以使用信用卡/免息消费贷消费，薅薅羊毛，还可以让本应该提前给出的钱再躺一段时间拿拿利息。&lt;/p&gt;
+
+&lt;p&gt;每到还款日，过一遍信用卡明细，挑出固定支出/未来基金的部分，用对应账户还款，剩下的用零花钱账户还款。&lt;/p&gt;
+
+&lt;p&gt;如果有账户透支，需要挪用其他账户的，应急下应欠多少，在以后分配时，还回去。&lt;/p&gt;
+
+&lt;p&gt;如原本应该属于愿望基金，比如买健身私教课，但要短时间提前支出，就算做愿望基金账户向固定储蓄账户借出钱。&lt;/p&gt;
+
+&lt;p&gt;下次划钱到固定储蓄账户的时候，要对应补回固定储蓄部分（存多点）。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;记账软件&quot;&gt;记账软件&lt;/h2&gt;
+
+&lt;p&gt;App 我是使用随手记，虽然界面不那么出彩，但胜在功能比较全，统计图表也比较常用，用户量比较大，重点还免费。&lt;/p&gt;
+
+&lt;p&gt;至于账户数据安全…谷歌应用商店有国际版，应该稍微安全一点。&lt;/p&gt;
+
+&lt;p&gt;国外的记账软件跟银行集成的很好，它会自动接入对应银行查到账单明细，支持多个不同的银行，并给你提供智能归类和分析。&lt;/p&gt;
+
+&lt;p&gt;但用户要是没有国外信用卡的，就享受不了。&lt;/p&gt;
+
+&lt;p&gt;而有自由记账功能的，你去逛一圈 Google Play，便会对作者名字有股亲切感。&lt;/p&gt;</content><author><name></name></author><category term="Finance" /><summary type="html">分享一下我个人用了三年的记账方法，主要思想借鉴于一篇知乎的答案，抱歉原答案我已经找不出来了。</summary></entry><entry xml:lang="zh"><title type="html">慎入 Chromebook ！</title><link href="http://vivionlin.github.io/zh/2023/11/08/Chromebook.html" rel="alternate" type="text/html" title="慎入 Chromebook ！" /><published>2023-11-08T00:00:00-06:00</published><updated>2023-11-08T00:00:00-06:00</updated><id>http://vivionlin.github.io/2023/11/08/Chromebook</id><content type="html" xml:base="http://vivionlin.github.io/2023/11/08/Chromebook.html">&lt;p&gt;想打开我机身轻薄、外观设计充满前卫大厂感、装载着小众 OS 的 Chromebook 轻轻松松写写博客。但它又双桑叕一次让我失望了。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;三番两次的-linux-环境启动错误&quot;&gt;三番两次的 Linux 环境启动错误&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/chromebook-container-crashed.png&quot; alt=&quot;Linux 环境无法启动&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一年内我第二次碰上 ChromeOS 自带的 Linux 环境无法启动并显示 NEED_UPDATE。你觉得第二次少？我平时打开它也少。&lt;/p&gt;
+
+&lt;p&gt;于是我尝试恢复备份，等了十几分钟一直卡在 0%。&lt;/p&gt;
+
+&lt;p&gt;好吧，我重启重试，干脆利落地返回说有 Error 无法恢复。&lt;/p&gt;
+
+&lt;p&gt;我想应该是第二次搜索这个错误了，我再次采用网上答案的终极大法，时隔几个月又一次将整个 Linux 环境删掉重装。&lt;/p&gt;
+
+&lt;p&gt;然而重装也是一个等待漫长的过程……网络要是没接出去，就会中途失败。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;网络连接不稳定&quot;&gt;网络连接不稳定&lt;/h3&gt;
+
+&lt;p&gt;而网络能不能接出去，不是把在 Android 里平时能成功的配置，直接搬过来就没有问题。&lt;/p&gt;
+
+&lt;p&gt;你会奇妙地发现跟运营商还有关系，比如 L 家的手机热点、D 家的 Wifi 都是一开始能接但过一会就挂掉，但是 D 家的手机热点却能稳定接出去。&lt;/p&gt;
+
+&lt;p&gt;如果你哪一次开机发现网死活连不上了，记得检查一下机子时间，时间同步失效也会导致网络连接瘫痪。&lt;/p&gt;
+
+&lt;p&gt;记住它的脾气，你才能好好上网，用它干点轻量级的活。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/wifi-connection-was-limited.png&quot; alt=&quot;网络连接莫名被限制&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;不主流的用户习惯&quot;&gt;不主流的用户习惯&lt;/h3&gt;
+
+&lt;p&gt;如果你不满足于买它来只是做上网本，想利用它自带的 Linux 环境做开发机。&lt;/p&gt;
+
+&lt;p&gt;它干前端的活还行，VSCode 有 Debian 版可以装在 Linux 环境里。&lt;/p&gt;
+
+&lt;p&gt;后台的话数据库操作要么你命令行，否则就得在 Google Play / Chrome app 里找图形化工具。&lt;/p&gt;
+
+&lt;p&gt;另外 Chromebook 的功能键跟常用键盘不一样，触模版的方向跟平时的 Lenovo 等是相反的，快捷键跟 Windows 也有些不一样，这些你得熟悉。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;稀缺的区域性周边售后支持&quot;&gt;稀缺的区域性周边/售后支持&lt;/h3&gt;
+
+&lt;p&gt;我很喜欢它盖板上的 G 标。那是我的梦想大厂。&lt;/p&gt;
+
+&lt;p&gt;刚买到它时，我把淘宝、JD、闲鱼上都翻了一遍，就是没找到好看的保护套、安适的屏幕保护膜、专门型号的键盘模。海淘的价格不可以接受的。&lt;/p&gt;
+
+&lt;p&gt;至于售后，官方说会提供系统更新支持到 2026，可是上次 Linux 环境坏掉就发生在系统更新后。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/linux-installation-stuck.png&quot; alt=&quot;Linux 环境难以安装&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;众所周知，G 家不在中国提供服务，我买之前就是做好了像折腾 Android 一样折腾它的心理准备。但它真的麻烦多了。&lt;/p&gt;
+
+&lt;p&gt;我已经在 Github Web 完成了这篇吐槽，而 Linux 环境的进度条还没有走完。&lt;/p&gt;</content><author><name></name></author><category term="PC" /><summary type="html">想打开我机身轻薄、外观设计充满前卫大厂感、装载着小众 OS 的 Chromebook 轻轻松松写写博客。但它又双桑叕一次让我失望了。</summary></entry><entry xml:lang="en"><title type="html">Start to use Heptabase for notes</title><link href="http://vivionlin.github.io/zh/2023/02/12/heptabase.html" rel="alternate" type="text/html" title="Start to use Heptabase for notes" /><published>2023-02-12T00:00:00-06:00</published><updated>2023-02-12T00:00:00-06:00</updated><id>http://vivionlin.github.io/2023/02/12/heptabase</id><content type="html" xml:base="http://vivionlin.github.io/2023/02/12/heptabase.html">&lt;h2 id=&quot;a-roam-fan&quot;&gt;A Roam fan&lt;/h2&gt;
+
+&lt;p&gt;In 2020, I occasionally found a note-taking product named &lt;strong&gt;Roam Research&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was surprised by the idea of &lt;mark&gt;bi-directional links&lt;/mark&gt; and thought this was a revolutionary feature.&lt;/p&gt;
+
+&lt;p&gt;Most of the popular products (Evernote, Notion, Youdao Note, etc.) at that time were tree-like (folder-&amp;gt;subfolder/note, 1 to N),
+but the bi-directional links in Roam can make notes more like a graph (notes &amp;lt;-&amp;gt; notes, N to M).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/backlink.png&quot; alt=&quot;Roam&apos;s di-directional links&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This makes sense as the neurons in our brains are also structured like a network, a graph.&lt;/p&gt;
+
+&lt;p&gt;So, I couldn’t wait to pay to subscribe to Roam Research just to experience and support it :open_hands:.&lt;/p&gt;
+
+&lt;h2 id=&quot;poor-in-visualization&quot;&gt;Poor in visualization&lt;/h2&gt;
+
+&lt;p&gt;I migrated and recorded my to-do list, journals, and thoughts in Roam.&lt;/p&gt;
+
+&lt;p&gt;As I spent 2 years in Roam, I found it lacking in mind maps.
+When the relationships between notes are complex, mind maps can provide a more readable view. So I had to use XMind or DrawIO for drawing, then export as pictures to embed in Roam.&lt;/p&gt;
+
+&lt;h2 id=&quot;try-heptabase&quot;&gt;Try Heptabase&lt;/h2&gt;
+
+&lt;p&gt;Then in 2022, I heard a new product named Heptabase from a Roam fans club.&lt;/p&gt;
+
+&lt;p&gt;This product also has some revolutionary ideas, focusing on the &lt;mark&gt;entire input-output flow&lt;/mark&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/data2wisdom.jpeg&quot; alt=&quot;Data input to wisdom output flow&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Record pieces of information in &lt;strong&gt;journal&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;When you want to study a specific topic, pull out the info from the journal as a &lt;strong&gt;card&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;If you want to define the relationships between cards, create a &lt;strong&gt;whiteboard&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Then you can easily write an article by copy-paste this whiteboard&lt;/li&gt;
+  &lt;li&gt;What’s more, if you want to maintain a big picture of whiteboards, you can design them in a &lt;strong&gt;map&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/heptabase.jpeg&quot; alt=&quot;Heptabase&apos;s whiteboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sounds like it not only keeps the advantages of bi-directional links but also provides help in building mind maps and outputting articles.&lt;/p&gt;
+
+&lt;p&gt;I think Heptabase can better match my professional knowledge management needs.&lt;/p&gt;
+
+&lt;p&gt;I just paid $83 to use and support it for a year.&lt;/p&gt;
+
+&lt;p&gt;My first project on it is GCP learning. Let me see if it’s worth it or not :laughing:!&lt;/p&gt;</content><author><name></name></author><category term="node-taking" /><category term="tools" /><summary type="html">A Roam fan</summary></entry></feed>
