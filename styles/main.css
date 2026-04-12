@@ -112,16 +112,15 @@ a{
     font-family: 'Share Tech Mono', monospace;
 }
 .my-link{
+    color: black;
     font-size: 18px !important;
 }
 .my-link:hover{
-    background: #c9f6ff;
-    border: 0px solid #c9f6ff;
+    background: black;
+    color: white;
     border-radius: 3px;
 }
 .my-link:active{
-    background: #c9dcff;
-    border: 1px solid #c9dcff;
     border-radius: 3px;
 }
 .my-section{
@@ -130,7 +129,6 @@ a{
     margin-top: 45px;
 }
 .my-name{
-    font-family: 'Vast Shadow', cursive;
     font-size: 45px;
     color: black;
 }
@@ -149,20 +147,21 @@ a{
     font-size: 33px;
 }
 .my-mini-heading{
-    font-family: 'Vast Shadow', cursive;
     font-weight: normal;
     font-size: 27px;
+    text-align: center;
 }
 .my-mini-heading-sub{
     font-family: 'Share Tech Mono', monospace;
     font-weight: normal;    
     font-size: 14.5px;
+    color: grey;
 }
 .my-description{
     font-family: 'Share Tech Mono', monospace;
     font-size: 15px;
     color: #4db6ac;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .my-footer{
     position:fixed;
@@ -255,6 +254,7 @@ a{
     margin-bottom: 40px;
 }
 .my-item-sub{
+    color: grey;
     font-family: 'Share Tech Mono', monospace;
     font-size: 13px;
 }
@@ -265,7 +265,17 @@ a{
 }
 #projects, #posts{
     display: none;
+    margin-top: 50px;
 }
 img{
     max-width: 100%;
+}
+hr {
+    width: 2%;
+}
+article ul {
+    padding: revert;
+}
+article ul li {
+    list-style-type: circle;
 }

@@ -7,9 +7,6 @@ layout: default
   <a id="projects-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_projects();">{{ site.projects_btn }}</a>
 </div>
 <div id="posts">
-
-  <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
-
   <ul>
     {% for post in site.posts %}
     <li>
@@ -34,7 +31,6 @@ layout: default
 
 
 <div id="projects">
-  <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
   <ul>
     {% for project in site.data.projects %}
     <li>
@@ -51,9 +47,6 @@ layout: default
 
 <noscript>
   <div id="posts-noscript">
-
-    <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
-
     <ul>
       {% for post in site.posts %}
       <li>
@@ -71,7 +64,6 @@ layout: default
     </ul>
   </div>
   <div id="projects-noscript">
-    <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
     <ul>
       {% for project in site.data.projects %}
       <li>
