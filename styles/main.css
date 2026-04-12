@@ -112,11 +112,12 @@ a{
     font-family: 'Share Tech Mono', monospace;
 }
 .my-link{
+    color: black;
     font-size: 18px !important;
 }
 .my-link:hover{
-    background: #c9f6ff;
-    border: 0px solid #c9f6ff;
+    background: black;
+    color: white;
     border-radius: 3px;
 }
 .my-link:active{
@@ -255,6 +256,7 @@ a{
     margin-bottom: 40px;
 }
 .my-item-sub{
+    color: grey;
     font-family: 'Share Tech Mono', monospace;
     font-size: 13px;
 }
