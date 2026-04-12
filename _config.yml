@@ -11,7 +11,7 @@ github_username: VivionLin
 author: "Vivion Lin"
 
 # google analytics tracking code, please change the value
-g_analytics: "<script async src='https://www.googletagmanager.com/gtag/js?id=G-30CWRJ5491'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-30CWRJ5491');</script>"
+g_analytics: "G-30CWRJ5491"
 
 # add your disqus to enable comments
 disqus_shortname:
