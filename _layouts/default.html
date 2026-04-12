@@ -8,7 +8,9 @@
         <p class="my-description" itemprop="text">
           {{ site.about }}
           <br>
+          {% if site.location %}
           <i class="fa fa-map-marker"></i> {{ site.location }}
+          {% endif %}
         </p>
         <div class="row">
           <div class="col s12 m8 offset-m2 l6 offset-l3">
