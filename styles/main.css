@@ -273,9 +273,9 @@ img{
 hr {
     width: 2%;
 }
-ul {
+article ul {
     padding: revert;
 }
-ul li {
+article ul li {
     list-style-type: circle;
 }
