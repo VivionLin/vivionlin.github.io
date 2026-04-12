@@ -1,8 +1,7 @@
 ---
 title: 用 200 元的 TV 棒收看全球流媒体
 date: 2024-03-29 20:46:00 Z
-categories:
-- tools
+tags: ['tools']
 layout: post
 ---
 
